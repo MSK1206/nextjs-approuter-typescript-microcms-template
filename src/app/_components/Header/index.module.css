@@ -1,0 +1,8 @@
+.navbody {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  /*z-index: -2;*/
+}
