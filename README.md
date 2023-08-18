@@ -1,34 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nextjs-approuter-typescript-microcms-template
 
-## Getting Started
+このプロジェクトは、Next.js、TypeScript、microCMS などを使用して開発されたウェブアプリケーションです。詳細については以下をご覧ください。
 
-First, run the development server:
+## 概要
+
+このプロジェクトは、ウェブアプリケーションのフロントエンドを Next.js と TypeScript を使用して構築しています。バックエンドのコンテンツ管理には microCMS を活用しており、microcms-js-sdk を介してデータを取得・表示しています。日付の操作には dayjs を使用し、HTML パーサーとして html-react-parser を導入しています。また、スタイルの管理には classnames ライブラリを活用しています。
+
+## TypeScript
+
+TypeScript は、JavaScript のスーパーセットであり、静的型付けをサポートしたプログラミング言語です。TypeScript を使用することで、コードの品質向上や開発効率の向上が期待できます。TypeScript は、豊富な型アノテーションを通じてコードの理解やメンテナンスを容易にします。
+
+## microCMS
+
+microCMS は、ヘッドレス CMS プラットフォームで、コンテンツの作成と管理を簡単に行える特徴を持ちます。RESTful API を提供し、ウェブアプリケーションからコンテンツを取得するためのデータソースとして使用します。microcms-js-sdk は、JavaScript アプリケーションから microCMS の API へのアクセスを簡素化します。
+
+## dayjs
+
+dayjs は、Moment.js の代替として利用される、軽量な日付と時刻の操作ライブラリです。コードのバンドルサイズを削減しながら、日付操作のニーズに応えるための機能を提供します。
+
+## html-react-parser
+
+html-react-parser は、HTML 文字列を解析して React 要素に変換するライブラリです。動的なコンテンツを HTML フォーマットで取得した場合に便利で、リッチなコンテンツの表示に活用されます。
+
+## classnames
+
+classnames は、動的なクラス名を生成するためのユーティリティです。React コンポーネント内でスタイルを適用する際に役立ち、スタイリングの一貫性を保つのに寄与します。
+
+
+## インストールと実行
+
+以下の手順に従って、プロジェクトをローカル環境で実行してみましょう。
+
+1. リポジトリをクローンします。
+
+```bash
+git clone https://github.com/your-username/your-repo.git
+```
+
+2. プロジェクトのディレクトリに移動します。
+
+```bash
+cd nextjs-approuter-typescript-microcms-template
+```
+
+3. 必要なパッケージをインストールします。
+
+```bash
+npm install
+```
+
+4. 開発サーバーを起動します。 
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
