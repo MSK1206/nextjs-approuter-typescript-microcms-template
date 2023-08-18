@@ -1,0 +1,15 @@
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandimg {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.brandname {
+  font-size: 24px;
+}
