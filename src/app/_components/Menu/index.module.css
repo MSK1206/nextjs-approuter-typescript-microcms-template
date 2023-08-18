@@ -1,0 +1,71 @@
+.items {
+  display: flex;
+  gap: 40px;
+  color: black;
+}
+
+.button {
+  display: none;
+}
+
+.xmarkicon {
+  color: white;
+  width: 32px;
+  height: 32px;
+}
+
+.bbricon {
+  color: black;
+  width: 32px;
+  height: 32px;
+}
+
+.nav li {
+  list-style: none;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    color: black;
+    padding: 25px 20px;
+  }
+
+  .items {
+    flex-direction: column;
+    padding: 0 80px 0 20px;
+    gap: 24px;
+  }
+  .items li:not(:first-child) {
+    margin-top: 5px;
+  }
+
+  .items a {
+    color: white;
+    font-size: 22px;
+    min-width: 100px;
+  }
+
+  .button {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+  }
+}
